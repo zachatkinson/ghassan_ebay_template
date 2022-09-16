@@ -1,2 +1,3 @@
-# ghassan_ebay_template
-Ebay template for Ghassan
+# Ghassan Ebay Template
+A simple ebay template for automotive part information.
+

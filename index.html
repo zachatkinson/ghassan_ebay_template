@@ -1,0 +1,158 @@
+<!-- Style Tags. Sets Rules and Colors for Parts Template. -->
+<style>
+    *{
+        font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    .template_header {
+        background: #DDDDDD;
+        width: 95%;
+        display: grid;
+        align-items: center;
+        padding: 0.5rem;
+        border: 2px solid #454545;
+        margin-left: auto;
+        margin-right: auto;
+        color: #454545;
+        grid-template-columns: max-content 1fr;
+    }
+
+    .header_title {
+        border-left: 2px solid #454545;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .details_wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details_header {
+        background: #454545;
+        color: #DDDDDD;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .details_header_icon {
+        display: inline-block;
+        max-width: 48px;
+    }
+
+    .details_header_text {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .details_body {
+        background: #DDDDDC;
+        color: #454545;
+        padding: 1rem;
+    }
+    .contact_links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .email_address, .phone_number{
+        margin-left: 0.5rem;
+    }
+    .phone_icon{
+        margin-left: 0.5rem;
+    }
+
+    .img_responsive{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    li::marker {
+        color: #F1892F;
+    }
+    a{
+        color: #F1892F;
+    }
+
+</style>
+
+
+<div class="template_header">
+    <!--Ghassan Logo -->
+    <div class="header_logo"><img class="img_responsive" src="img/logo_ghassan.png" alt="Ghassan Automotive"/></div>
+    <!-- Product Title.  Change the value between the <div></div> tags -->
+    <div class="header_title"><h2>TITLE OF PRODUCT</h2></div>
+</div>
+
+<!-- Product Details Section -->
+<div class="details_wrapper">
+    <!-- Product Overview Header with Icon -->
+    <div class="details_header">
+        <div class="details_header_icon"><img src="img/icon_overview.png" alt="Product Overview"/></div>
+        <div class="details_header_text"><h3>Product Overview</h3></div>
+    </div>
+    <!-- Product Overview Body. Change the value between the <div></div> tags -->
+    <div class="details_body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa neque, elementum sit amet congue id,
+            vestibulum vel nulla. Sed ac nibh fringilla, molestie erat a, aliquet augue. Maecenas nisl turpis, hendrerit
+            ut facilisis pulvinar, interdum ut magna. Nullam consequat nulla massa, eget ultrices tellus rhoncus dictum.
+            Curabitur id tempus est</p>
+        <h4>TITLE OF PRODUCT</h4>
+        <ul>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+        </ul>
+    </div>
+
+    <!-- Warranty Banner -->
+    <img src="img/banner_warranty.png" alt="2-Year, Unlimited Mile Warranty" style="max-width: 100%; width: 100%;"/>
+
+    <!-- Shipping Header with Icon -->
+    <div class="details_header">
+        <div class="details_header_icon"><img src="img/icon_shipping.png" alt="Product Overview"/></div>
+        <div class="details_header_text"><h3>How it Works + Shipping</h3></div>
+    </div>
+    <!-- Shipping Body. Change the value between the <div></div> tags -->
+    <div class="details_body">
+        <p>Ghassan Automotive wants to provide a stress-free and convenient experience. If you need an engine
+            replacement or want to upgrade the one you already have, Ghassan Automotive can do that for you. The process
+            is zero-hassle, from picking up the vehicle or engine to rebuilding it and returning it to you. Engines are
+            usually in stock and ready to ship.</p>
+        <p>Fully insured vehicle transportation rates are estimated at 85+ cents per mile, or engine shipment is a flat
+            rate of $595 each way; shipping costs may vary depending on accommodation. In-house engine installations are
+            available with labor as low as $2,995.</p>
+        <p>You must contact Ghassan Automotive before shipping is arranged. There is a $1,000 core charge that is not
+            included in the price and is refunded once the core engine is received. Core engines can be shipped to
+            Ghassan Automotive in advance. All core engines must be in a rebuildable condition to be accepted. All
+            payments must be made via certified funds.</p>
+        <p>The engine ships as a long block with no accessories.</p>
+
+    </div>
+
+    <!-- Based in USA Banner -->
+    <img src="img/banner_usa.png" alt="Based in the USA" style="max-width: 100%; width: 100%;"/>
+    <!-- Questions Header with Icon -->
+    <div class="details_header">
+        <div class="details_header_icon"><img src="img/icon_faq.png" alt="Product Overview"/></div>
+        <div class="details_header_text"><h3>Questions?</h3></div>
+    </div>
+    <!-- Questions Body -->
+    <div class="details_body">
+        <div class="contact_links">
+            <img src="img/icon_mail.png" alt="Email Us"/>
+            <p class="email_address"><a href="mailto:info@ghassanautomotive.com">info@ghassanautomotive.com</a></p>
+            <img class="phone_icon" src="img/icon_phone.png" alt="Phone Us"/>
+            <p class="phone_number"><a href="tel:+14057800708">(405) 780-0708</a></p>
+        </div>
+    </div>
+</div>
